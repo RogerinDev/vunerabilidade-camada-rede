@@ -1,0 +1,19 @@
+# ============================================================================
+# Dependências Python — Vulnerabilidades na Camada 3 (IP Spoofing & ICMP Flood)
+# ============================================================================
+# Nota importante para Linux (CachyOS / Arch Linux e Ubuntu 24.04 LTS):
+# Como o envio de pacotes na Camada 3 exige execução com "sudo python3 ...",
+# recomenda-se instalar o Scapy pelo gerenciador oficial do sistema para que
+# fique disponível para o usuário root sem conflito de ambiente virtual:
+#
+#   No CachyOS / Arch Linux (Máquina Atacante):
+#     sudo pacman -S --needed python-scapy wireshark-qt tcpdump nmap
+#
+#   No Ubuntu 24.04 LTS (Máquina Alvo):
+#     sudo apt update && sudo apt install -y python3-scapy tcpdump
+#
+# Caso utilize um ambiente virtual Python (venv), instale com:
+#   pip install -r scripts/requisitos.txt
+# ============================================================================
+
+scapy>=2.5.0

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Capturas locais temporárias (mantém apenas as capturas documentadas do repositório)
+*.pcap
+*.pcapng
+!capturas/02_captura_real_wireshark.pcapng
+!capturas/pcap_simulado_didatico.pcap
+
+# Arquivos compactados e backups
+*.zip
+*.tar.gz
+*.bak
+*~
+*.swp
+
+# Sistema Operacional e IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
